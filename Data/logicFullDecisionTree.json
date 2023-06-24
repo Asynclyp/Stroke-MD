@@ -1,0 +1,935 @@
+{
+    "question": "How_Long_Is_Last_Normal_Time",
+    "choice": {
+        "< 4.5 hours": {
+            "question": "Is_Patient_Eligible_For_IV_Alt",
+            "choice": {
+                "Yes": {
+                    "question": "Give_IV_Alt",
+                    "choice": {
+                        "References for IV thrombolytic": {
+                            "question": "References_for_IV_Thrombolytic_Admin"
+                        },
+                        "next": {
+                            "question": "IS_NIHSS_GREATER_6",
+                            "choice": {
+                                "Yes": {
+                                    "question": "PERFORM_RAPID_CTA",
+                                    "choice": {
+                                        "Yes": {
+                                            "question": "GO_TO_ENDOVASCULAR_PROTOCOL_1",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "CHIEF_TO_CALL_NEUROIR",
+                                                    "choice": {
+                                                        "Yes": {
+                                                            "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                                        },
+                                                        "No": {
+                                                            "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                                        }
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                                }
+                                            }
+                                        },
+                                        "No": {
+                                            "question": "CONFIRM_NO_LVO",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "GO_TO_ENDOVASCULAR_PROTOCOL_1",
+                                                    "choice": {
+                                                        "Yes": {
+                                                            "question": "CHIEF_TO_CALL_NEUROIR",
+                                                            "choice": {
+                                                                "Yes": {
+                                                                    "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                                                },
+                                                                "No": {
+                                                                    "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                                                }
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                                        }
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "No": {
+                                    "question": "POST_THROMBOLYTIC_MONITORING"
+                                }
+                            }
+                        }
+                    }
+                },
+                "No": {
+                    "question": "IS_NIHSS_GREATER_6",
+                    "choice": {
+                        "Yes": {
+                            "question": "PERFORM_RAPID_CTA",
+                            "choice": {
+                                "Yes": {
+                                    "question": "GO_TO_ENDOVASCULAR_PROTOCOL_1",
+                                    "choice": {
+                                        "Yes": {
+                                            "question": "CHIEF_TO_CALL_NEUROIR",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                                },
+                                                "No": {
+                                                    "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                                }
+                                            }
+                                        },
+                                        "No": {
+                                            "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                        }
+                                    }
+                                },
+                                "No": {
+                                    "question": "CONFIRM_NO_LVO",
+                                    "choice": {
+                                        "Yes": {
+                                            "question": "GO_TO_ENDOVASCULAR_PROTOCOL_1",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "CHIEF_TO_CALL_NEUROIR",
+                                                    "choice": {
+                                                        "Yes": {
+                                                            "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                                        },
+                                                        "No": {
+                                                            "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                                        }
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                                }
+                                            }
+                                        },
+                                        "No": {
+                                            "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "No": {
+                            "question": "POST_THROMBOLYTIC_MONITORING"
+                        }
+                    }
+                }
+            }
+        },
+        "4.5 - 16 hours": {
+            "question": "IS_NIHSS_GREATER_6",
+            "choice": {
+                "No": {
+                    "question": "LINK_TO_SLIDE_E",
+                    "choice": {
+                        "next": {
+                            "question": "Order_And_Perform_Hyperacute_MRI",
+                            "choice": {
+                                "next": {
+                                    "question": "Arrived_MRI_Zone_2",
+                                    "choice": {
+                                        "next": {
+                                            "question": "Move_To_MRI_Zone_34",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "Discuss_MRI_With_Chief",
+                                                    "choice": {
+                                                        "Yes": {
+                                                            "question": "Discuss_Plan_With_ED_Attending",
+                                                            "choice": {
+                                                                "References for IV thrombolytic": {
+                                                                    "question": "References_for_IV_Thrombolytic_Admin"
+                                                                },
+                                                                "next": {
+                                                                    "question": "Perform_post_thrombolytic_BP"
+                                                                }
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                        }
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Yes": {
+                    "question": "PERFORM_RAPID_CTA",
+                    "choice": {
+                        "Yes": {
+                            "question": "GO_TO_ENDOVASCULAR_PROTOCOL_2",
+                            "choice": {
+                                "Yes": {
+                                    "question": "CHIEF_TO_CALL_NEUROIR",
+                                    "choice": {
+                                        "Yes": {
+                                            "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                        },
+                                        "No": {
+                                            "question": "LINK_TO_SLIDE_E",
+                                            "choice": {
+                                                "next": {
+                                                    "question": "Order_And_Perform_Hyperacute_MRI",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Arrived_MRI_Zone_2",
+                                                            "choice": {
+                                                                "next": {
+                                                                    "question": "Move_To_MRI_Zone_34",
+                                                                    "choice": {
+                                                                        "Yes": {
+                                                                            "question": "Discuss_MRI_With_Chief",
+                                                                            "choice": {
+                                                                                "Yes": {
+                                                                                    "question": "Discuss_Plan_With_ED_Attending",
+                                                                                    "choice": {
+                                                                                        "References for IV thrombolytic": {
+                                                                                            "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                        },
+                                                                                        "next": {
+                                                                                            "question": "Perform_post_thrombolytic_BP"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "No": {
+                                        "question": "LINK_TO_SLIDE_E",
+                                        "choice": {
+                                            "next": {
+                                                "question": "Order_And_Perform_Hyperacute_MRI",
+                                                "choice": {
+                                                    "next": {
+                                                        "question": "Arrived_MRI_Zone_2",
+                                                        "choice": {
+                                                            "next": {
+                                                                "question": "Move_To_MRI_Zone_34",
+                                                                "choice": {
+                                                                    "Yes": {
+                                                                        "question": "Discuss_MRI_With_Chief",
+                                                                        "choice": {
+                                                                            "Yes": {
+                                                                                "question": "Discuss_Plan_With_ED_Attending",
+                                                                                "choice": {
+                                                                                    "References for IV thrombolytic": {
+                                                                                        "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                    },
+                                                                                    "next": {
+                                                                                        "question": "Perform_post_thrombolytic_BP"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "No": {
+                                                                                "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "No": {
+                                                                        "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "No": {
+                                    "question": "LINK_TO_SLIDE_E",
+                                    "choice": {
+                                        "next": {
+                                            "question": "Order_And_Perform_Hyperacute_MRI",
+                                            "choice": {
+                                                "next": {
+                                                    "question": "Arrived_MRI_Zone_2",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Move_To_MRI_Zone_34",
+                                                            "choice": {
+                                                                "Yes": {
+                                                                    "question": "Discuss_MRI_With_Chief",
+                                                                    "choice": {
+                                                                        "Yes": {
+                                                                            "question": "Discuss_Plan_With_ED_Attending",
+                                                                            "choice": {
+                                                                                "References for IV thrombolytic": {
+                                                                                    "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                },
+                                                                                "next": {
+                                                                                    "question": "Perform_post_thrombolytic_BP"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "No": {
+                            "question": "CONFIRM_NO_LVO",
+                            "choice": {
+                                "Yes": {
+                                    "question": "GO_TO_ENDOVASCULAR_PROTOCOL_2",
+                                    "choice": {
+                                        "Yes": {
+                                            "question": "CHIEF_TO_CALL_NEUROIR",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                                },
+                                                "No": {
+                                                    "question": "LINK_TO_SLIDE_E",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Order_And_Perform_Hyperacute_MRI",
+                                                            "choice": {
+                                                                "next": {
+                                                                    "question": "Arrived_MRI_Zone_2",
+                                                                    "choice": {
+                                                                        "next": {
+                                                                            "question": "Move_To_MRI_Zone_34",
+                                                                            "choice": {
+                                                                                "Yes": {
+                                                                                    "question": "Discuss_MRI_With_Chief",
+                                                                                    "choice": {
+                                                                                        "Yes": {
+                                                                                            "question": "Discuss_Plan_With_ED_Attending",
+                                                                                            "choice": {
+                                                                                                "References for IV thrombolytic": {
+                                                                                                    "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                                },
+                                                                                                "next": {
+                                                                                                    "question": "Perform_post_thrombolytic_BP"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "No": {
+                                                "question": "LINK_TO_SLIDE_E",
+                                                "choice": {
+                                                    "next": {
+                                                        "question": "Order_And_Perform_Hyperacute_MRI",
+                                                        "choice": {
+                                                            "next": {
+                                                                "question": "Arrived_MRI_Zone_2",
+                                                                "choice": {
+                                                                    "next": {
+                                                                        "question": "Move_To_MRI_Zone_34",
+                                                                        "choice": {
+                                                                            "Yes": {
+                                                                                "question": "Discuss_MRI_With_Chief",
+                                                                                "choice": {
+                                                                                    "Yes": {
+                                                                                        "question": "Discuss_Plan_With_ED_Attending",
+                                                                                        "choice": {
+                                                                                            "References for IV thrombolytic": {
+                                                                                                "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                            },
+                                                                                            "next": {
+                                                                                                "question": "Perform_post_thrombolytic_BP"
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "No": {
+                                                                                        "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "No": {
+                                                                                "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "No": {
+                                            "question": "LINK_TO_SLIDE_E",
+                                            "choice": {
+                                                "next": {
+                                                    "question": "Order_And_Perform_Hyperacute_MRI",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Arrived_MRI_Zone_2",
+                                                            "choice": {
+                                                                "next": {
+                                                                    "question": "Move_To_MRI_Zone_34",
+                                                                    "choice": {
+                                                                        "Yes": {
+                                                                            "question": "Discuss_MRI_With_Chief",
+                                                                            "choice": {
+                                                                                "Yes": {
+                                                                                    "question": "Discuss_Plan_With_ED_Attending",
+                                                                                    "choice": {
+                                                                                        "References for IV thrombolytic": {
+                                                                                            "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                        },
+                                                                                        "next": {
+                                                                                            "question": "Perform_post_thrombolytic_BP"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "No": {
+                                    "question": "LINK_TO_SLIDE_E",
+                                    "choice": {
+                                        "next": {
+                                            "question": "Order_And_Perform_Hyperacute_MRI",
+                                            "choice": {
+                                                "next": {
+                                                    "question": "Arrived_MRI_Zone_2",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Move_To_MRI_Zone_34",
+                                                            "choice": {
+                                                                "Yes": {
+                                                                    "question": "Discuss_MRI_With_Chief",
+                                                                    "choice": {
+                                                                        "Yes": {
+                                                                            "question": "Discuss_Plan_With_ED_Attending",
+                                                                            "choice": {
+                                                                                "References for IV thrombolytic": {
+                                                                                    "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                },
+                                                                                "next": {
+                                                                                    "question": "Perform_post_thrombolytic_BP"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "16 - 24 hours": {
+            "question": "IS_NIHSS_GREATER_10",
+            "choice": {
+                "No": {
+                    "question": "LINK_TO_SLIDE_E",
+                    "choice": {
+                        "next": {
+                            "question": "Order_And_Perform_Hyperacute_MRI",
+                            "choice": {
+                                "next": {
+                                    "question": "Arrived_MRI_Zone_2",
+                                    "choice": {
+                                        "next": {
+                                            "question": "Move_To_MRI_Zone_34",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "Discuss_MRI_With_Chief",
+                                                    "choice": {
+                                                        "Yes": {
+                                                            "question": "Discuss_Plan_With_ED_Attending",
+                                                            "choice": {
+                                                                "References for IV thrombolytic": {
+                                                                    "question": "References_for_IV_Thrombolytic_Admin"
+                                                                },
+                                                                "next": {
+                                                                    "question": "Perform_post_thrombolytic_BP"
+                                                                }
+                                                            }
+                                                        },
+                                                        "No": {
+                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                        }
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "Yes": {
+                    "question": "PERFORM_RAPID_CTA",
+                    "choice": {
+                        "Yes": {
+                            "question": "GO_TO_ENDOVASCULAR_PROTOCOL_3",
+                            "choice": {
+                                "Yes": {
+                                    "question": "CHIEF_TO_CALL_NEUROIR",
+                                    "choice": {
+                                        "Yes": {
+                                            "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                        },
+                                        "No": {
+                                            "question": "LINK_TO_SLIDE_E",
+                                            "choice": {
+                                                "next": {
+                                                    "question": "Order_And_Perform_Hyperacute_MRI",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Arrived_MRI_Zone_2",
+                                                            "choice": {
+                                                                "next": {
+                                                                    "question": "Move_To_MRI_Zone_34",
+                                                                    "choice": {
+                                                                        "Yes": {
+                                                                            "question": "Discuss_MRI_With_Chief",
+                                                                            "choice": {
+                                                                                "Yes": {
+                                                                                    "question": "Discuss_Plan_With_ED_Attending",
+                                                                                    "choice": {
+                                                                                        "References for IV thrombolytic": {
+                                                                                            "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                        },
+                                                                                        "next": {
+                                                                                            "question": "Perform_post_thrombolytic_BP"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "No": {
+                                        "question": "LINK_TO_SLIDE_E",
+                                        "choice": {
+                                            "next": {
+                                                "question": "Order_And_Perform_Hyperacute_MRI",
+                                                "choice": {
+                                                    "next": {
+                                                        "question": "Arrived_MRI_Zone_2",
+                                                        "choice": {
+                                                            "next": {
+                                                                "question": "Move_To_MRI_Zone_34",
+                                                                "choice": {
+                                                                    "Yes": {
+                                                                        "question": "Discuss_MRI_With_Chief",
+                                                                        "choice": {
+                                                                            "Yes": {
+                                                                                "question": "Discuss_Plan_With_ED_Attending",
+                                                                                "choice": {
+                                                                                    "References for IV thrombolytic": {
+                                                                                        "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                    },
+                                                                                    "next": {
+                                                                                        "question": "Perform_post_thrombolytic_BP"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "No": {
+                                                                                "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                            }
+                                                                        }
+                                                                    },
+                                                                    "No": {
+                                                                        "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "No": {
+                                    "question": "LINK_TO_SLIDE_E",
+                                    "choice": {
+                                        "next": {
+                                            "question": "Order_And_Perform_Hyperacute_MRI",
+                                            "choice": {
+                                                "next": {
+                                                    "question": "Arrived_MRI_Zone_2",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Move_To_MRI_Zone_34",
+                                                            "choice": {
+                                                                "Yes": {
+                                                                    "question": "Discuss_MRI_With_Chief",
+                                                                    "choice": {
+                                                                        "Yes": {
+                                                                            "question": "Discuss_Plan_With_ED_Attending",
+                                                                            "choice": {
+                                                                                "References for IV thrombolytic": {
+                                                                                    "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                },
+                                                                                "next": {
+                                                                                    "question": "Perform_post_thrombolytic_BP"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "No": {
+                            "question": "CONFIRM_NO_LVO",
+                            "choice": {
+                                "Yes": {
+                                    "question": "GO_TO_ENDOVASCULAR_PROTOCOL_3",
+                                    "choice": {
+                                        "Yes": {
+                                            "question": "CHIEF_TO_CALL_NEUROIR",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                                },
+                                                "No": {
+                                                    "question": "LINK_TO_SLIDE_E",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Order_And_Perform_Hyperacute_MRI",
+                                                            "choice": {
+                                                                "next": {
+                                                                    "question": "Arrived_MRI_Zone_2",
+                                                                    "choice": {
+                                                                        "next": {
+                                                                            "question": "Move_To_MRI_Zone_34",
+                                                                            "choice": {
+                                                                                "Yes": {
+                                                                                    "question": "Discuss_MRI_With_Chief",
+                                                                                    "choice": {
+                                                                                        "Yes": {
+                                                                                            "question": "Discuss_Plan_With_ED_Attending",
+                                                                                            "choice": {
+                                                                                                "References for IV thrombolytic": {
+                                                                                                    "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                                },
+                                                                                                "next": {
+                                                                                                    "question": "Perform_post_thrombolytic_BP"
+                                                                                                }
+                                                                                            }
+                                                                                        },
+                                                                                        "No": {
+                                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            "No": {
+                                                "question": "LINK_TO_SLIDE_E",
+                                                "choice": {
+                                                    "next": {
+                                                        "question": "Order_And_Perform_Hyperacute_MRI",
+                                                        "choice": {
+                                                            "next": {
+                                                                "question": "Arrived_MRI_Zone_2",
+                                                                "choice": {
+                                                                    "next": {
+                                                                        "question": "Move_To_MRI_Zone_34",
+                                                                        "choice": {
+                                                                            "Yes": {
+                                                                                "question": "Discuss_MRI_With_Chief",
+                                                                                "choice": {
+                                                                                    "Yes": {
+                                                                                        "question": "Discuss_Plan_With_ED_Attending",
+                                                                                        "choice": {
+                                                                                            "References for IV thrombolytic": {
+                                                                                                "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                            },
+                                                                                            "next": {
+                                                                                                "question": "Perform_post_thrombolytic_BP"
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    "No": {
+                                                                                        "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                    }
+                                                                                }
+                                                                            },
+                                                                            "No": {
+                                                                                "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "No": {
+                                            "question": "LINK_TO_SLIDE_E",
+                                            "choice": {
+                                                "next": {
+                                                    "question": "Order_And_Perform_Hyperacute_MRI",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Arrived_MRI_Zone_2",
+                                                            "choice": {
+                                                                "next": {
+                                                                    "question": "Move_To_MRI_Zone_34",
+                                                                    "choice": {
+                                                                        "Yes": {
+                                                                            "question": "Discuss_MRI_With_Chief",
+                                                                            "choice": {
+                                                                                "Yes": {
+                                                                                    "question": "Discuss_Plan_With_ED_Attending",
+                                                                                    "choice": {
+                                                                                        "References for IV thrombolytic": {
+                                                                                            "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                        },
+                                                                                        "next": {
+                                                                                            "question": "Perform_post_thrombolytic_BP"
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                "No": {
+                                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "No": {
+                                    "question": "LINK_TO_SLIDE_E",
+                                    "choice": {
+                                        "next": {
+                                            "question": "Order_And_Perform_Hyperacute_MRI",
+                                            "choice": {
+                                                "next": {
+                                                    "question": "Arrived_MRI_Zone_2",
+                                                    "choice": {
+                                                        "next": {
+                                                            "question": "Move_To_MRI_Zone_34",
+                                                            "choice": {
+                                                                "Yes": {
+                                                                    "question": "Discuss_MRI_With_Chief",
+                                                                    "choice": {
+                                                                        "Yes": {
+                                                                            "question": "Discuss_Plan_With_ED_Attending",
+                                                                            "choice": {
+                                                                                "References for IV thrombolytic": {
+                                                                                    "question": "References_for_IV_Thrombolytic_Admin"
+                                                                                },
+                                                                                "next": {
+                                                                                    "question": "Perform_post_thrombolytic_BP"
+                                                                                }
+                                                                            }
+                                                                        },
+                                                                        "No": {
+                                                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "No": {
+                                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "> 24 hours": {
+            "question": "Review_Wake_Up_Criteria",
+            "choice": {
+                "Yes": {
+                    "question": "Order_And_Perform_Hyperacute_MRI",
+                    "choice": {
+                        "next": {
+                            "question": "Arrived_MRI_Zone_2",
+                            "choice": {
+                                "next": {
+                                    "question": "Move_To_MRI_Zone_34",
+                                    "choice": {
+                                        "Yes": {
+                                            "question": "Discuss_MRI_With_Chief",
+                                            "choice": {
+                                                "Yes": {
+                                                    "question": "Discuss_Plan_With_ED_Attending",
+                                                    "choice": {
+                                                        "References for IV thrombolytic": {
+                                                            "question": "References_for_IV_Thrombolytic_Admin"
+                                                        },
+                                                        "next": {
+                                                            "question": "Perform_post_thrombolytic_BP"
+                                                        }
+                                                    }
+                                                },
+                                                "No": {
+                                                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                }
+                                            }
+                                        },
+                                        "No": {
+                                            "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "No": {
+                    "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                }
+            }
+        }
+    }
+}

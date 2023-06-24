@@ -1,0 +1,847 @@
+{
+  "question": "Evidence_For_ICH_On_Head",
+  "choice": {
+    "Yes": {
+      "question": "Perform_Head_Neck_CTA"
+    },
+    "No": {
+      "question": "Suspect_Acute_Ischemic_Stroke",
+      "choice": {
+        "Stroke-Mimic": {
+          "question": "Would_You_Give_This_Patient_IV",
+          "choice": {
+            "No": {
+              "question": "Discuss_Hyperacute_MRI_To_Rule_Out",
+              "choice": {
+                "Yes": {
+                  "question": "Perform_HyperStroke_MRI",
+                  "choice": {
+                    "Yes": {
+                      "question": "PostThrombolytic_Monitoring_If_Applicable"
+                    },
+                    "No": {
+                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                    }
+                  }
+                },
+                "No": {
+                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                }
+              }
+            },
+            "Yes": {
+              "question": "How_Long_Is_Last_Normal_Time",
+              "choice": {
+                "< 4.5 hours": {
+                  "question": "IS_NIHSS_GREATER_6",
+                  "choice": {
+                    "NIHSS < 6": {
+                      "question": "NIHSS_LESS_THAN_6_INFO",
+                      "choice": {
+                        "next": {
+                          "question": "Is_Patient_Eligible_For_IV_Alt",
+                          "choice": {
+                            "Yes": {
+                              "question": "Give_IV_Alt",
+                              "choice": {
+                                "Yes": {
+                                  "question": "CHIEF_TO_CALL_NEUROIR",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                    },
+                                    "No": {
+                                      "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                    }
+                                  }
+                                },
+                                "No": {
+                                  "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "NIHSS ≥ 6": {
+                      "question": "NIHSS_GREATER_THAN_6_INFO",
+                      "choice": {
+                        "next": {
+                          "question": "Is_Patient_Eligible_For_IV_Alt",
+                          "choice": {
+                            "Yes": {
+                              "question": "PERFORM_RAPID_CTA",
+                              "choice": {
+                                "Yes": {
+                                  "question": "GO_TO_ENDOVASCULAR_PROTOCOL_1",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "CHIEF_TO_CALL_NEUROIR"
+                                    },
+                                    "No": {
+                                      "question": "POST_THROMBOLYTIC_MONITORING"
+                                    }
+                                  }
+                                },
+                                "No": {
+                                  "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "PERFORM_RAPID_CTA",
+                              "choice": {
+                                "Yes": {
+                                  "question": "GO_TO_ENDOVASCULAR_PROTOCOL_1",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "CHIEF_TO_CALL_NEUROIR"
+                                    },
+                                    "No": {
+                                      "question": "POST_THROMBOLYTIC_MONITORING"
+                                    }
+                                  }
+                                },
+                                "No": {
+                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "4.5 - 16 hours": {
+                  "question": "IS_NIHSS_GREATER_6",
+                  "choice": {
+                    "NIHSS < 6": {
+                      "question": "FOUND_4HR",
+                      "choice":{
+                        "Found < 4.5 hr":{
+                          "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Ca_Da",
+                          "choice": {
+                            "next": {
+                              "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                              "choice": {
+                                "Yes": {
+                                  "question": "Perform_HyperStroke_MRI",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                    },
+                                    "No": {
+                                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                    }
+                                  }
+                                },
+                                "No": {
+                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Found ≥ 4.5 hr":{
+                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                        }
+                      }
+                    },
+                    "NIHSS ≥ 6": {
+                      "question": "POTENTIAL_THROMBECTOMY_CANDIDATE_IF_NOT_ELIGIBLE",
+                      "choice": {
+                        "next": {
+                          "question": "PERFORM_RAPID_CTA",
+                          "choice": {
+                            "Yes": {
+                              "question": "GO_TO_ENDOVASCULAR_PROTOCOL_2",
+                              "choice": {
+                                "Yes": {
+                                  "question": "CHIEF_TO_CALL_NEUROIR"
+                                },
+                                "No": {
+                                  "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                                  "choice": {
+                                    "next": {
+                                      "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                      "choice": {
+                                        "Yes": {
+                                          "question": "Perform_HyperStroke_MRI",
+                                          "choice": {
+                                            "Yes": {
+                                              "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                            },
+                                            "No": {
+                                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                            }
+                                          }
+                                        },
+                                        "No": {
+                                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                              "choice": {
+                                "next": {
+                                  "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "Perform_HyperStroke_MRI",
+                                      "choice": {
+                                        "Yes": {
+                                          "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                        },
+                                        "No": {
+                                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                        }
+                                      }
+                                    },
+                                    "No": {
+                                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "16 - 24 hours": {
+                  "question": "IS_NIHSS_GREATER_10",
+                  "choice": {
+                    "NIHSS < 10": {
+                      "question": "FOUND_4HR",
+                      "choice":{
+                        "Found < 4.5 hr":{
+                          "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Ca_Da",
+                          "choice": {
+                            "next": {
+                              "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                              "choice": {
+                                "Yes": {
+                                  "question": "Perform_HyperStroke_MRI",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                    },
+                                    "No": {
+                                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                    }
+                                  }
+                                },
+                                "No": {
+                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Found ≥ 4.5 hr":{
+                          "question":"Triage_per_patient_diagnosis_and_level_of_care_needed"
+                        }
+                      }
+                    },
+                    "NIHSS ≥ 10": {
+                      "question": "POTENTIAL_THROMBECTOMY_CANDIDATE_IF_NOT_ELIGIBLE",
+                      "choice": {
+                        "next": {
+                          "question": "PERFORM_RAPID_CTA",
+                          "choice": {
+                            "Yes": {
+                              "question": "GO_TO_ENDOVASCULAR_PROTOCOL_3",
+                              "choice": {
+                                "Yes": {
+                                  "question": "CHIEF_TO_ALERT_STROKE_FELLOW_ATTENDING",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "TAKE_PATIENT_UP_TO_INR"
+                                    },
+                                    "No": {
+                                      "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                                      "choice": {
+                                        "next": {
+                                          "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                          "choice": {
+                                            "Yes": {
+                                              "question": "Perform_HyperStroke_MRI",
+                                              "choice": {
+                                                "Yes": {
+                                                  "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                                },
+                                                "No": {
+                                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                                }
+                                              }
+                                            },
+                                            "No": {
+                                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                },
+                                "No": {
+                                  "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                                  "choice": {
+                                    "next": {
+                                      "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                      "choice": {
+                                        "Yes": {
+                                          "question": "Perform_HyperStroke_MRI",
+                                          "choice": {
+                                            "Yes": {
+                                              "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                            },
+                                            "No": {
+                                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                            }
+                                          }
+                                        },
+                                        "No": {
+                                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              },
+                              "No": {
+                                "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                                "choice": {
+                                  "next": {
+                                    "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                    "choice": {
+                                      "Yes": {
+                                        "question": "Perform_HyperStroke_MRI",
+                                        "choice": {
+                                          "Yes": {
+                                            "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                          },
+                                          "No": {
+                                            "question": "No_Stroke"
+                                          }
+                                        }
+                                      },
+                                      "No": {
+                                        "question": "No_Stroke"
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                              "choice": {
+                                "next": {
+                                  "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "Perform_HyperStroke_MRI",
+                                      "choice": {
+                                        "Yes": {
+                                          "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                        },
+                                        "No": {
+                                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                        }
+                                      }
+                                    },
+                                    "No": {
+                                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "No": {
+                            "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                            "choice": {
+                              "next": {
+                                "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                "choice": {
+                                  "Yes": {
+                                    "question": "Perform_HyperStroke_MRI",
+                                    "choice": {
+                                      "Yes": {
+                                        "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                      },
+                                      "No": {
+                                        "question": "No_Stroke"
+                                      }
+                                    }
+                                  },
+                                  "No": {
+                                    "question": "No_Stroke"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                },
+                "> 24 hours": {
+                  "question": "FOUND_4HR",
+                  "choice": {
+                    "Found < 4.5 hr": {
+                      "question": "POTENTIAL_IV_TPA_CANDIDATE",
+                      "choice": {
+                        "next": {
+                          "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                          "choice": {
+                            "Yes": {
+                              "question": "Perform_HyperStroke_MRI",
+                              "choice": {
+                                "Yes": {
+                                  "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                },
+                                "No": {
+                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Found ≥ 4.5 hr": {
+                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "Stroke": {
+          "question": "How_Long_Is_Last_Normal_Time",
+          "choice": {
+            "< 4.5 hours": {
+              "question": "IS_NIHSS_GREATER_6",
+              "choice": {
+                "NIHSS < 6": {
+                  "question": "NIHSS_LESS_THAN_6_INFO",
+                  "choice": {
+                    "next": {
+                      "question": "Is_Patient_Eligible_For_IV_Alt",
+                      "choice": {
+                        "Yes": {
+                          "question": "Give_IV_Alt",
+                          "choice": {
+                            "Yes": {
+                              "question": "CHIEF_TO_CALL_NEUROIR",
+                              "choice": {
+                                "Yes": {
+                                  "question": "TAKE_PATIENT_UP_TO_INR_SUITE"
+                                },
+                                "No": {
+                                  "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                            }
+                          }
+                        },
+                        "No": {
+                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                        }
+                      }
+                    }
+                  }
+                },
+                "NIHSS ≥ 6": {
+                  "question": "NIHSS_GREATER_THAN_6_INFO",
+                  "choice": {
+                    "next": {
+                      "question": "Is_Patient_Eligible_For_IV_Alt",
+                      "choice": {
+                        "Yes": {
+                          "question": "PERFORM_RAPID_CTA",
+                          "choice": {
+                            "Yes": {
+                              "question": "GO_TO_ENDOVASCULAR_PROTOCOL_1",
+                              "choice": {
+                                "Yes": {
+                                  "question": "CHIEF_TO_CALL_NEUROIR"
+                                },
+                                "No": {
+                                  "question": "POST_THROMBOLYTIC_MONITORING"
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE"
+                            }
+                          }
+                        },
+                        "No": {
+                          "question": "PERFORM_RAPID_CTA",
+                          "choice": {
+                            "Yes": {
+                              "question": "GO_TO_ENDOVASCULAR_PROTOCOL_1",
+                              "choice": {
+                                "Yes": {
+                                  "question": "CHIEF_TO_CALL_NEUROIR"
+                                },
+                                "No": {
+                                  "question": "POST_THROMBOLYTIC_MONITORING"
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "4.5 - 16 hours": {
+              "question": "IS_NIHSS_GREATER_6",
+              "choice": {
+                "NIHSS < 6": {
+                  "question": "FOUND_4HR",
+                  "choice":{
+                    "Found < 4.5 hr":{
+                      "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Ca_Da",
+                      "choice": {
+                        "next": {
+                          "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                          "choice": {
+                            "Yes": {
+                              "question": "Perform_HyperStroke_MRI",
+                              "choice": {
+                                "Yes": {
+                                  "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                },
+                                "No": {
+                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Found ≥ 4.5 hr":{
+                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                    }
+                  }
+                },
+                "NIHSS ≥ 6": {
+                  "question": "POTENTIAL_THROMBECTOMY_CANDIDATE_IF_NOT_ELIGIBLE",
+                  "choice": {
+                    "next": {
+                      "question": "PERFORM_RAPID_CTA",
+                      "choice": {
+                        "Yes": {
+                          "question": "GO_TO_ENDOVASCULAR_PROTOCOL_2",
+                          "choice": {
+                            "Yes": {
+                              "question": "CHIEF_TO_CALL_NEUROIR"
+                            },
+                            "No": {
+                              "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                              "choice": {
+                                "next": {
+                                  "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "Perform_HyperStroke_MRI",
+                                      "choice": {
+                                        "Yes": {
+                                          "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                        },
+                                        "No": {
+                                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                        }
+                                      }
+                                    },
+                                    "No": {
+                                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "No": {
+                          "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                          "choice": {
+                            "next": {
+                              "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                              "choice": {
+                                "Yes": {
+                                  "question": "Perform_HyperStroke_MRI",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                    },
+                                    "No": {
+                                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                    }
+                                  }
+                                },
+                                "No": {
+                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "16 - 24 hours": {
+              "question": "IS_NIHSS_GREATER_10",
+              "choice": {
+                "NIHSS < 10": {
+                  "question": "FOUND_4HR",
+                  "choice":{
+                    "Found < 4.5 hr":{
+                      "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Ca_Da",
+                      "choice": {
+                        "next": {
+                          "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                          "choice": {
+                            "Yes": {
+                              "question": "Perform_HyperStroke_MRI",
+                              "choice": {
+                                "Yes": {
+                                  "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                },
+                                "No": {
+                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "Found ≥ 4.5 hr":{
+                      "question":"Triage_per_patient_diagnosis_and_level_of_care_needed"
+                    }
+                  }
+                },
+                "NIHSS ≥ 10": {
+                  "question": "POTENTIAL_THROMBECTOMY_CANDIDATE_IF_NOT_ELIGIBLE",
+                  "choice": {
+                    "next": {
+                      "question": "PERFORM_RAPID_CTA",
+                      "choice": {
+                        "Yes": {
+                          "question": "GO_TO_ENDOVASCULAR_PROTOCOL_3",
+                          "choice": {
+                            "Yes": {
+                              "question": "CHIEF_TO_ALERT_STROKE_FELLOW_ATTENDING",
+                              "choice": {
+                                "Yes": {
+                                  "question": "TAKE_PATIENT_UP_TO_INR"
+                                },
+                                "No": {
+                                  "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                                  "choice": {
+                                    "next": {
+                                      "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                      "choice": {
+                                        "Yes": {
+                                          "question": "Perform_HyperStroke_MRI",
+                                          "choice": {
+                                            "Yes": {
+                                              "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                            },
+                                            "No": {
+                                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                            }
+                                          }
+                                        },
+                                        "No": {
+                                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            },
+                            "No": {
+                              "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                              "choice": {
+                                "next": {
+                                  "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "Perform_HyperStroke_MRI",
+                                      "choice": {
+                                        "Yes": {
+                                          "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                        },
+                                        "No": {
+                                          "question": "No_Stroke"
+                                        }
+                                      }
+                                    },
+                                    "No": {
+                                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          "No": {
+                            "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                            "choice": {
+                              "next": {
+                                "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                                "choice": {
+                                  "Yes": {
+                                    "question": "Perform_HyperStroke_MRI",
+                                    "choice": {
+                                      "Yes": {
+                                        "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                      },
+                                      "No": {
+                                        "question": "No_Stroke"
+                                      }
+                                    }
+                                  },
+                                  "No": {
+                                    "question": "No_Stroke"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "No": {
+                          "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                          "choice": {
+                            "next": {
+                              "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                              "choice": {
+                                "Yes": {
+                                  "question": "Perform_HyperStroke_MRI",
+                                  "choice": {
+                                    "Yes": {
+                                      "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                    },
+                                    "No": {
+                                      "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                    }
+                                  }
+                                },
+                                "No": {
+                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "No": {
+                        "question": "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db",
+                        "choice": {
+                          "next": {
+                            "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                            "choice": {
+                              "Yes": {
+                                "question": "Perform_HyperStroke_MRI",
+                                "choice": {
+                                  "Yes": {
+                                    "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                                  },
+                                  "No": {
+                                    "question": "No_Stroke"
+                                  }
+                                }
+                              },
+                              "No": {
+                                "question": "No_Stroke"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "> 24 hours": {
+              "question": "FOUND_4HR",
+              "choice": {
+                "Found < 4.5 hr": {
+                  "question": "POTENTIAL_IV_TPA_CANDIDATE",
+                  "choice": {
+                    "next": {
+                      "question": "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL",
+                      "choice": {
+                        "Yes": {
+                          "question": "Perform_HyperStroke_MRI",
+                          "choice": {
+                            "Yes": {
+                              "question": "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI"
+                            },
+                            "No": {
+                              "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                            }
+                          }
+                        },
+                        "No": {
+                          "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Found ≥ 4.5 hr": {
+                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

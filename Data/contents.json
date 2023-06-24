@@ -1,0 +1,734 @@
+{
+  "How_Long_Is_Last_Normal_Time": {
+    "title": "When was the last known normal",
+    "content": "",
+    "end": false,
+    "options": [
+      "< 4.5 hours",
+      "4.5 - 16 hours",
+      "16 - 24 hours",
+      "> 24 hours"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Evidence_For_ICH_On_Head": {
+    "title": "Any blood on CT?",
+    "content": "",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Perform_Head_Neck_CTA": {
+    "title": "Perform CTA head",
+    "content": "",
+    "end": true,
+    "linksEnd": false,
+    "links": [
+      "Initial Eval and Management",
+      "Consulting Service by ICH",
+      "ICU vs. SDU Admission"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Would_You_Give_This_Patient_IV": {
+    "title": "Would you give this patient IV thrombolytic if you did not have access to hyperacute MRI?",
+    "content": "",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Discuss_Hyperacute_MRI_To_Rule_Out": {
+    "title": "Discuss hyperacute MRI to rule-out stroke with Senior. Go for hyperacute MRI?",
+    "content": "",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Perform_HyperStroke_MRI": {
+    "title": "Perform HyperStroke MRI Protocol",
+    "content": "$newList$DWI, FLAIR, and T2* or SWI$newLine$$newList$Optional: Time-of-flight head MRA$newLine$Discuss MRI and tPA eligibility with senior and ED.$newLine$Give IV Thrombolytic?",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "tPA Eligibility Criteria"
+    ],
+    "newPageLinks": [
+      "Inclusion",
+      "Exclusion",
+      "Special Cases",
+      "BP Goal",
+      "Outcome Visual Aid"
+    ],
+    "newPageEnd2": false,
+    "newPage2": [
+      "Hyperacute Protocol"
+    ],
+    "newPageLinks2": [
+      "Hyperacute MRI Protocol",
+      "Special Situation",
+      "WAKE-UP Stroke Protocol",
+      "WAKE-UP Inclusion, Exclusion Crit.",
+      "WAKE-UP Imaging Selection Crit.",
+      "Neuroradiology contact for Emerg."
+    ]
+  },
+  "PostThrombolytic_Monitoring_If_Applicable": {
+    "title": "",
+    "content": "Post-thrombolytic Monitoring if applicable$newLine$Triage per patient’s diagnosis and necessary level of care",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "post tPA Monitoring"
+    ],
+    "newPageLinks": [
+      "BP Goal and Mgmt",
+      "Hemorrhagic Conversion",
+      "Angioedema"
+    ],
+    "newPageEnd2": true
+  },
+  "Renturn_To_Decision_Tree": {
+    "title": "",
+    "content": "Return to decision algorithm and treat based on time from LKN.",
+    "end": false,
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Suspect_Acute_Ischemic_Stroke": {
+    "title": "Clinical Suspicion",
+    "content": "",
+    "end": false,
+    "options": [
+      "Stroke",
+      "Stroke-Mimic"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Suspect_Stroke_Mimic": {
+    "title": "Suspect Stroke Mimic?",
+    "content": "",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Are_You_Confident_This_Is": {
+    "title": "Are you confident this is a stroke mimic?",
+    "content": "",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "No_Stroke": {
+    "title": "Stroke Not Suspected",
+    "content": "Triage per patient's diagnosis and necessary level of care",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Would_You_Give_This_Patient_IV_Thrombolytic": {
+    "title": "Would you give this patient IV thrombolytic or perform thrombectomy if you did not have access to hyperacute MRI?",
+    "content": "",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Return_To_LKN": {
+    "title": "Return to LKN Decision Box",
+    "content": "LKN Decision box does not exist as of yet",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Discuss_Hyperacute_MRI_To_Rule_Out_Stroke_With_Cheif": {
+    "title": "Discuss hyperacute MRI to rule-out stroke with Chief Resident or Stroke Attending. Go for hyperacute MRI?",
+    "content": "",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Move_To_MRI_Zone_2": {
+    "title": "Move to MRI Zone 2",
+    "content": "Discuss plan with Chief and ED attending (758-6903); Confirm thrombolytic dose / weight with ED RN “Safety time-out”$newLine$Ask RN to get IV thrombolytic (and BP meds if needed) from Pyxis located in MRI Re-examine pt and check vital signs; Review thrombolytic inclusion /exclusion criteria.  If patient is still a candidate, administer IV thrombolytic Bolus in MRI, return to ED to begin infusion ",
+    "end": false,
+    "options": [
+      "next ",
+      "References for IV thrombolytic"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Perform_Post_Thrombolytic_BP_Monitoring_And_Complications": {
+    "title": "",
+    "content": "Perform post-thrombolytic BP Monitoring and complications$newLine$Admit to NeuroICU or Stepdown Unit as appropriate",
+    "end": true,
+    "linksEnd": false,
+    "links": [
+      "Link to 1H"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Triage_per_patient_diagnosis_and_level_of_care_needed": {
+    "title": "",
+    "content": "Triage per patient’s diagnosis and level of care needed",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Review_Wake_Up_Criteria": {
+    "title": "Review WAKE-UP CRITERIA",
+    "content": "Does patient meet criteria for WAKE UP/unwitnesed onset hyperacute MRI and is the patient < 4.5 hours from symptom discovery?",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": false,
+    "links": [
+      "Link to 4A"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Decision_Yes_Order_And_Perform": {
+    "title": "Decision “YES” for Hyperacute MRI",
+    "content": "Notify RN to prepare pt for HMRI $newLine$Notify ED MD to order HyperStroke MRI in Epic $newLine$Complete and Fax MR Screening Sheet (747-4271) $newLine$Call MRI Charge Tech (362-1676) \"On our way for HMRI\" $newLine$Travel quickly to MRI suite",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": false,
+    "links": [
+      "Link to 3A",
+      "Link to 3B"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Order_And_Perform_Hyperacute_MRI": {
+    "title": "Order and Perform Hyperacute MRI",
+    "content": "Notify RN to prepare pt for HMRI $newLine$Notify ED MD to order HyperStroke MRI in Epic $newLine$Complete and Fax MR Screening Sheet (747-4271) $newLine$Call MRI Charge Tech (362-1676) \"On our way for HMRI\" $newLine$Travel quickly to MRI suite",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": false,
+    "links": [
+      "Link to 3A",
+      "Link to 3B"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Arrived_MRI_Zone_2": {
+    "title": "Arrived MRI Zone 2",
+    "content": "Place Belongings in Locker or on Hook, Remove all Metal, Badges, etc.$newLine$SAFETY first! Keep the phone/pager in scanner control room (zone 3)$newLine$Assist Transfer to MRI Stretcher and attach vital signs, monitor if needed",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Move_To_MRI_Zone_34": {
+    "title": "Move to MRI Zone 3/4",
+    "content": "Perform HyperStroke MRI Protocol (~6 min)$newLine$$newList$DWI, FLAIR, and T2* or SWI $newLine$$newList$Optional: Time-of-flight head MRA - Consider in case of flucuating sympots or concern for basilar artery occlusion, and when CTA has not already been done. \n$newLine$Is DWI positive, FLAIR negative and consistent with patient's presenting deficits? Review images with NeuroRad Fellow at scanner (night, call 508-3767)",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": false,
+    "links": [
+      "Link to 3B"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Discuss_MRI_With_Chief": {
+    "title": "",
+    "content": "Discuss MRI with Chief and Stroke Fellow / attending and decision for thrombolytic; Re-examine pt and check vital signs to ensure eligibility, administer IV thrombolytic Bolus in MRI, return to ED to begin infusion. \n$newLine$Eligible for thrombolytic for wake-up / unwitnessed stroke onset within 4.5 hrs from symptom discovery?",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": false,
+    "links": [
+      "Link to 1A",
+      "Link to 3B",
+      "Link to 4A",
+      "Link to 4B",
+      "Link to 4C"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Discuss_Plan_With_ED_Attending": {
+    "title": "",
+    "content": "Discuss plan with ED attending (758-6903); Confirm thrombolytic dose / weight with ED RN \"Safety time-out\"$newLine$ Ask RN to get IV thrombolytic (and BP meds if needed) from Pyxis located in MRI.  Give IV Thrombolytic bolus in MRI and return to ED TCC for infusion .",
+    "end": false,
+    "options": [
+      "References for IV thrombolytic",
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "References_for_IV_Thrombolytic_Admin": {
+    "title": "References for IV Thrombolytic Administration",
+    "content": "",
+    "end": true,
+    "linksEnd": false,
+    "links": [
+      "Link to 1A",
+      "Link to 1B",
+      "Link to 1C",
+      "Link to 1D",
+      "Link to 1E",
+      "Link to 1F",
+      "Link to 1G",
+      "Link to 1H",
+      "Link to 1I"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Perform_post_thrombolytic_BP": {
+    "title": "",
+    "content": "Perform post-thrombolytic BP Monitoring and complications$newLine$Admit to NeuroICU or Stepdown Unit as appropriate ",
+    "end": true,
+    "linksEnd": false,
+    "links": [
+      "Link to 1H"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Give_TPA": {
+    "title": "Give TPA",
+    "content": "I don't know how, the doc is confusing, but you should give TPA NOW!",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "Is_Patient_Eligible_For_IV_Alt": {
+    "title": "Is patient eligible for IV Thrombolytic?",
+    "content": "",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "tPA Eligibility Criteria"
+    ],
+    "newPageLinks": [
+      "Inclusion",
+      "Exclusion",
+      "Special Cases",
+      "BP Goal",
+      "Outcome Visual Aid"
+    ],
+    "newPageEnd2": true
+  },
+  "Give_IV_Alt": {
+    "title": "Give IV Thrombolytic",
+    "content": "",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "post tPA Monitoring"
+    ],
+    "newPageLinks": [
+      "BP Goal and Mgmt",
+      "Hemorrhagic Conversion",
+      "Angioedema"
+    ],
+    "newPageEnd2": true
+  },
+  "IS_NIHSS_GREATER_6": {
+    "title": "",
+    "content": "",
+    "end": false,
+    "options": [
+      "NIHSS < 6",
+      "NIHSS ≥ 6"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "NIHSS_LESS_THAN_6_INFO": {
+    "title": "NIHSS < 6",
+    "content": "Potential IV tPA candidate",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "POTENTIAL_IV_TPA_CANDIDATE": {
+    "title": "",
+    "content": "Potential IV tPA candidate per WAKE-UP protocol",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "POTENTIAL_THROMBECTOMY_CANDIDATE_IF_NOT_ELIGIBLE": {
+    "title": "",
+    "content": "Potential thrombectomy candidate. If not eligible, consider WAKE-UP protocol",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "POTENTIAL_WAKEUP_MRI_CANDIDATE": {
+    "title": "",
+    "content": "Potential Wake Up MRI candidate",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db": {
+    "title": "",
+    "content": "Potential Wake Up MRI candidate if symptom discovery < 4.5hr",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "POTENTIAL_WAKEUP_MRI_CANDIDATE_Ca_Da": {
+    "title": "",
+    "content": "Potential IV tPA candidate per WAKE-UP protocol",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "NIHSS_GREATER_THAN_6_INFO": {
+    "title": "NIHSS ≥ 6",
+    "content": "Potential IV tPA candidate and thrombectomy candidate",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "POST_THROMBOLYTIC_MONITORING": {
+    "title": "Post-thrombolytic Monitoring if applicable",
+    "content": "Triage per patient's diagnosis and necessary level of care",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "PERFORM_RAPID_CTA": {
+    "title": "Perform Rapid / CTA",
+    "content": "Is LVO present?",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": false,
+    "links": [
+      "CTP/CTA Protocol"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "CONFIRM_NO_LVO": {
+    "title": "Confirom no LVO after review of CTA by Neuroadiology Attending and Stroke Chief/Fellow/Attending",
+    "content": "Is LVO present?",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": false,
+    "links": [
+      "CTP/CTA Protocol",
+      "Link to 2F"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE": {
+    "title": "Post-thrombolytic Monitoring if applicable",
+    "content": "Triage per patient's diagnosis and necessary level of care",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "post tPA Monitoring"
+    ],
+    "newPageLinks": [
+      "BP Goal and Mgmt",
+      "Hemorrhagic Conversion",
+      "Angioedema"
+    ],
+    "newPageEnd2": true
+  },
+  "GO_TO_ENDOVASCULAR_PROTOCOL_1": {
+    "title": "",
+    "content": "Is patient eligible for thrombectomy?$newLine$-mRS<3$newLine$-ASPECTS ≥ 6?",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "Endovascular Criteria"
+    ],
+    "newPageLinks": [
+      "Inclusion Criteria",
+      "Exclusion Criteria",
+      "Imaging Selection",
+      "CTP/CTA Protocol",
+      "mRS"
+    ],
+    "newPageEnd2": true
+  },
+  "CHIEF_TO_CALL_NEUROIR": {
+    "title": "",
+    "content": "Chief to alert stroke fellow/attending for all LVOs and call NeuroIR. Take patient up to INR Suite. Admit to NeuroICU as appropriate",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "TAKE_PATIENT_UP_TO_INR_SUITE": {
+    "title": "",
+    "content": "Take patient up to INR Suite with Patient RN for thrombectomy. Post-procedure, admit to NeuroICU as appropriate",
+    "end": true,
+    "linksEnd": false,
+    "links": [
+      "Link to 2B",
+      "Link to 2C",
+      "Link to 2E",
+      "Link to 2F"
+    ],
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "IS_NIHSS_GREATER_10": {
+    "title": "",
+    "content": "",
+    "end": false,
+    "options": [
+      "NIHSS < 10",
+      "NIHSS ≥ 10"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "FOUND_4HR": {
+    "title": "",
+    "content": "",
+    "end": false,
+    "options": [
+      "Found < 4.5 hr",
+      "Found ≥ 4.5 hr"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "LINK_TO_SLIDE_E": {
+    "title": "Review Wake-up Criteria",
+    "content": "",
+    "end": false,
+    "options": [
+      "next"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "GO_TO_ENDOVASCULAR_PROTOCOL_2": {
+    "title": "Go to Endovascular Protocol",
+    "content": "Is patient eligible for thrombectomy?$newLine$ - Functional status of patient (mRS<3)?$newLine$ - No large,evolving infarct on CT and ASPECTS ≥ 6?$newLine$Rapid criteria: $newLine$$newList$ Core infarct volumes ≤ 70mL$newLine$$newList$ Core/Perfusion mismatch volume ≥ 15mL$newLine$$newList$Core/Perfusion mismatch ratio ≥ 1.8",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "Endovascular Criteria"
+    ],
+    "newPageLinks": [
+      "Inclusion Criteria",
+      "Exclusion Criteria",
+      "Imaging Selection"
+    ],
+    "newPageEnd2": true
+  },
+  "CHIEF_TO_ALERT_STROKE_FELLOW": {
+    "title": "Cheif to alert stroke felow/attending for all LVOs and call NeuroIR. Take patient up to INR Suite. Admite to NeuroICU as appropriate."
+  },
+  "GO_TO_ENDOVASCULAR_PROTOCOL_3": {
+    "title": "Go to Endovascular Protocol",
+    "content": "Is patient eligible for thrombectomy?$newLine$ - Functional status of patient (mRS<3)?$newLine$ - No large, evolving infarct on CT and ASPECTS ≥ 6?$newLine$Rapid criteria: $newLine$$newList$ Age < 80: core infarct volumes ≤ 30 mL$newLine$$newList$ Age  ≥ 80: core infarct volumes ≤ 20 mL",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "Endovascular Criteria"
+    ],
+    "newPageLinks": [
+      "Inclusion Criteria",
+      "Exclusion Criteria",
+      "Imaging Selection"
+    ],
+    "newPageEnd2": true
+  },
+  "CANDIDATE_FOR_WAKEUP_STROKE_PROTOCOL": {
+    "title": "",
+    "content": "Candidate for WAKE-UP stroke protocol?",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "WAKE-UP Stroke Criteria"
+    ],
+    "newPageLinks": [
+      "Inclusion for Wake-up",
+      "Exclusion for Wake-up",
+      "Imaging Selection",
+      "Inclusion",
+      "Exclusion",
+      "Special Cases",
+      "BP Goal",
+      "Outcome Visual Aid"
+    ],
+    "newPageEnd2": true
+  },
+  "GIVE_IV_THROMBOLYTIC_BOLUS_IN_MRI": {
+    "title": "",
+    "content": "Give IV Thrombolytic bolus in MRI and return to ED TCC for infusion",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "post tPA Monitoring"
+    ],
+    "newPageLinks": [
+      "BP Goal and Mgmt",
+      "Hemorrhagic Conversion",
+      "Angioedema"
+    ],
+    "newPageEnd2": true
+  },
+  "CHIEF_TO_ALERT_STROKE_FELLOW_ATTENDING": {
+    "title": "",
+    "content": "Chief to alert stroke fellow/attending for all LVOs and call NeuroIR. Decision Go for thrombectomy?",
+    "end": false,
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  },
+  "TAKE_PATIENT_UP_TO_INR": {
+    "title": "",
+    "content": "Take patient up to INR Suite with Patient RN for thrombectomy. Post-procedure, admit to NeuroICU as appropriate.",
+    "end": true,
+    "linksEnd": true,
+    "newPageEnd": true,
+    "newPageEnd2": true
+  }
+}

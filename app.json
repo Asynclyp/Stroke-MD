@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "stroke MD",
+    "slug": "strokeapp",
+    "privacy": "public",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "inc.ag.strokediagnosticapp",
+      "supportsTablet": false
+    },
+    "android": {
+      "package": "stroke.com",
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
