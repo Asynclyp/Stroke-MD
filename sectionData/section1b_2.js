@@ -32,10 +32,10 @@ export default class LotsOfStyles extends Component {
                 <Text style={styles.subTextBold}>Essential phone numbers:</Text>
                 <Text style={styles.subTextBold}>Technologist 24/7 phone numbers:</Text>
                 <Text style={styles.subTextList}>1. ED CT Technologist control room: <PhoneNumber number='3147586699'/></Text>
-                <Text style={styles.subTextList}><Text style={styles.subTextBold}>2. South campus stroke numbers:</Text></Text>
+                <Text style={styles.subTextList}><Text style={[styles.subTextBold, styles.SubTextItalic]}>2. South campus stroke numbers:</Text></Text>
                 <Text style={styles.subTextList2}><PhoneNumber number='3148013929'/></Text>
                 <Text style={styles.subTextList3}>Back-up: <PhoneNumber number='3148013932'/></Text>
-                <Text style={styles.subTextList}><Text style={styles.subTextBold}>3. North campus stroke numbers</Text></Text>
+                <Text style={styles.subTextList}><Text style={[styles.subTextBold, styles.SubTextItalic]}>3. North campus stroke numbers</Text></Text>
                 <Text style={styles.subTextList2}><PhoneNumber number='3143058401'/></Text>
                 <Text style={styles.subTextList3}>Back-up: <PhoneNumber number='3148013929 '/> and/or <PhoneNumber number='3148013932'/></Text>
                 <Text style={styles.subTextBold}>Thrombolytic phone numbers:</Text>

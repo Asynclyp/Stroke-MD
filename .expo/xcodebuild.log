@@ -1,5 +1,5 @@
 Command line invocation:
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/stsadmin/Yuanpeng/DevSTAC/Stroke-MD/ios/strokeMD.xcworkspace -configuration Debug -scheme strokeMD -destination id=D9F2435B-7162-45B2-8A0D-D141BDE5FE73
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -workspace /Users/stsadmin/Yuanpeng/DevSTAC/Stroke-MD/ios/strokeMD.xcworkspace -configuration Debug -scheme strokeMD -destination id=4132B85B-1C64-4B2A-956F-EE35F1967573
 
 User defaults from command line:
     IDEPackageSupportUseBuiltinSCM = YES
@@ -9,8 +9,8 @@ Prepare packages
 Computing target dependency graph and provisioning inputs
 
 Create build description
-Build description signature: 2487438ee6a2332e26aa557f9f8182cc
-Build description path: /Users/stsadmin/Library/Developer/Xcode/DerivedData/strokeMD-astkwecmilxkliealkpzoehetjjf/Build/Intermediates.noindex/XCBuildData/2487438ee6a2332e26aa557f9f8182cc-desc.xcbuild
+Build description signature: 0d1d4e9bfc31617b812575e8ae628954
+Build description path: /Users/stsadmin/Library/Developer/Xcode/DerivedData/strokeMD-astkwecmilxkliealkpzoehetjjf/Build/Intermediates.noindex/XCBuildData/0d1d4e9bfc31617b812575e8ae628954-desc.xcbuild
 
 note: Building targets in dependency order
 warning: Run script build phase '[CP-User] Generate app.config for prebuilt Constants.manifest' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'EXConstants' from project 'Pods')
@@ -40,9 +40,9 @@ PhaseScriptExecution [CP-User]\ Generate\ app.config\ for\ prebuilt\ Constants.m
     export ARCHS_STANDARD_64_BIT\=arm64\ x86_64
     export ARCHS_STANDARD_INCLUDING_64_BIT\=arm64\ x86_64
     export ARCHS_UNIVERSAL_IPHONE_OS\=arm64\ i386\ x86_64
-    export ASSETCATALOG_FILTER_FOR_DEVICE_MODEL\=iPhone14,7
+    export ASSETCATALOG_FILTER_FOR_DEVICE_MODEL\=iPhone15,2
     export ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION\=16.2
-    export ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION\=iPhone14,7
+    export ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION\=iPhone15,2
     export AVAILABLE_PLATFORMS\=appletvos\ appletvsimulator\ driverkit\ iphoneos\ iphonesimulator\ macosx\ watchos\ watchsimulator
     export BITCODE_GENERATION_MODE\=marker
     export BUILD_ACTIVE_RESOURCES_ONLY\=YES
@@ -435,8 +435,8 @@ PhaseScriptExecution [CP-User]\ Generate\ app.config\ for\ prebuilt\ Constants.m
     export TARGETED_DEVICE_FAMILY\=1,2
     export TARGETNAME\=EXConstants
     export TARGET_BUILD_DIR\=/Users/stsadmin/Library/Developer/Xcode/DerivedData/strokeMD-astkwecmilxkliealkpzoehetjjf/Build/Products/Debug-iphonesimulator/EXConstants
-    export TARGET_DEVICE_IDENTIFIER\=D9F2435B-7162-45B2-8A0D-D141BDE5FE73
-    export TARGET_DEVICE_MODEL\=iPhone14,7
+    export TARGET_DEVICE_IDENTIFIER\=4132B85B-1C64-4B2A-956F-EE35F1967573
+    export TARGET_DEVICE_MODEL\=iPhone15,2
     export TARGET_DEVICE_OS_VERSION\=16.2
     export TARGET_DEVICE_PLATFORM_NAME\=iphonesimulator
     export TARGET_NAME\=EXConstants
@@ -481,7 +481,7 @@ PhaseScriptExecution [CP-User]\ Generate\ app.config\ for\ prebuilt\ Constants.m
     export arch\=undefined_arch
     export variant\=normal
     /bin/sh -c /Users/stsadmin/Library/Developer/Xcode/DerivedData/strokeMD-astkwecmilxkliealkpzoehetjjf/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/EXConstants.build/Script-46EB2E0000F7A0.sh
-Node found at: /Users/stsadmin/.nvm/versions/node/v16.20.0/bin/node
+Node found at: /Users/stsadmin/.nvm/versions/node/v16.20.1/bin/node
 
 warning: Run script build phase 'Bundle React Native code and images' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'strokeMD' from project 'strokeMD')
 warning: Run script build phase 'Start Packager' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'strokeMD' from project 'strokeMD')
@@ -516,9 +516,9 @@ PhaseScriptExecution Bundle\ React\ Native\ code\ and\ images /Users/stsadmin/Li
     export ARCHS_STANDARD_INCLUDING_64_BIT\=arm64\ x86_64
     export ARCHS_UNIVERSAL_IPHONE_OS\=arm64\ i386\ x86_64
     export ASSETCATALOG_COMPILER_APPICON_NAME\=AppIcon
-    export ASSETCATALOG_FILTER_FOR_DEVICE_MODEL\=iPhone14,7
+    export ASSETCATALOG_FILTER_FOR_DEVICE_MODEL\=iPhone15,2
     export ASSETCATALOG_FILTER_FOR_DEVICE_OS_VERSION\=16.2
-    export ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION\=iPhone14,7
+    export ASSETCATALOG_FILTER_FOR_THINNING_DEVICE_CONFIGURATION\=iPhone15,2
     export AVAILABLE_PLATFORMS\=appletvos\ appletvsimulator\ driverkit\ iphoneos\ iphonesimulator\ macosx\ watchos\ watchsimulator
     export AppIdentifierPrefix\=HV7XSSJCYH.
     export BITCODE_GENERATION_MODE\=marker
@@ -578,6 +578,7 @@ PhaseScriptExecution Bundle\ React\ Native\ code\ and\ images /Users/stsadmin/Li
     export CODE_SIGN_ENTITLEMENTS\=strokeMD/strokeMD.entitlements
     export CODE_SIGN_IDENTITY\=-
     export CODE_SIGN_INJECT_BASE_ENTITLEMENTS\=YES
+    export CODE_SIGN_STYLE\=Manual
     export COLOR_DIAGNOSTICS\=NO
     export COMBINE_HIDPI_IMAGES\=NO
     export COMPILER_INDEX_STORE_ENABLE\=Default
@@ -779,7 +780,7 @@ PhaseScriptExecution Bundle\ React\ Native\ code\ and\ images /Users/stsadmin/Li
     export MAC_OS_X_VERSION_ACTUAL\=120601
     export MAC_OS_X_VERSION_MAJOR\=120000
     export MAC_OS_X_VERSION_MINOR\=120600
-    export MARKETING_VERSION\=1.0
+    export MARKETING_VERSION\=1.8
     export METAL_LIBRARY_FILE_BASE\=default
     export METAL_LIBRARY_OUTPUT_DIR\=/Users/stsadmin/Library/Developer/Xcode/DerivedData/strokeMD-astkwecmilxkliealkpzoehetjjf/Build/Products/Debug-iphonesimulator/strokeMD.app
     export MODULES_FOLDER_PATH\=strokeMD.app/Modules
@@ -833,7 +834,7 @@ PhaseScriptExecution Bundle\ React\ Native\ code\ and\ images /Users/stsadmin/Li
     export PRECOMP_DESTINATION_DIR\=/Users/stsadmin/Library/Developer/Xcode/DerivedData/strokeMD-astkwecmilxkliealkpzoehetjjf/Build/Intermediates.noindex/strokeMD.build/Debug-iphonesimulator/strokeMD.build/PrefixHeaders
     export PRESERVE_DEAD_CODE_INITS_AND_TERMS\=NO
     export PRIVATE_HEADERS_FOLDER_PATH\=strokeMD.app/PrivateHeaders
-    export PRODUCT_BUNDLE_IDENTIFIER\=inc.ag.strokediagnosticapp
+    export PRODUCT_BUNDLE_IDENTIFIER\=edu.wustl.strokediagnosticapp
     export PRODUCT_BUNDLE_PACKAGE_TYPE\=APPL
     export PRODUCT_MODULE_NAME\=strokeMD
     export PRODUCT_NAME\=strokeMD
@@ -945,8 +946,8 @@ PhaseScriptExecution Bundle\ React\ Native\ code\ and\ images /Users/stsadmin/Li
     export TARGETED_DEVICE_FAMILY\=1
     export TARGETNAME\=strokeMD
     export TARGET_BUILD_DIR\=/Users/stsadmin/Library/Developer/Xcode/DerivedData/strokeMD-astkwecmilxkliealkpzoehetjjf/Build/Products/Debug-iphonesimulator
-    export TARGET_DEVICE_IDENTIFIER\=D9F2435B-7162-45B2-8A0D-D141BDE5FE73
-    export TARGET_DEVICE_MODEL\=iPhone14,7
+    export TARGET_DEVICE_IDENTIFIER\=4132B85B-1C64-4B2A-956F-EE35F1967573
+    export TARGET_DEVICE_MODEL\=iPhone15,2
     export TARGET_DEVICE_OS_VERSION\=16.2
     export TARGET_DEVICE_PLATFORM_NAME\=iphonesimulator
     export TARGET_NAME\=strokeMD

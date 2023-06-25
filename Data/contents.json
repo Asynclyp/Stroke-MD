@@ -64,7 +64,7 @@
   },
   "Perform_HyperStroke_MRI": {
     "title": "Perform HyperStroke MRI Protocol",
-    "content": "$newList$DWI, FLAIR, and T2* or SWI$newLine$$newList$Optional: Time-of-flight head MRA$newLine$Discuss MRI and tPA eligibility with senior and ED.$newLine$Give IV Thrombolytic?",
+    "content": "$newList$DWI, FLAIR, and T2* or SWI$newLine$$newList$Optional: Time-of-flight head MRA$newLine$Discuss MRI and thrombolytic eligibility with senior and ED.$newLine$Give IV Thrombolytic?",
     "end": false,
     "options": [
       "Yes",
@@ -73,26 +73,26 @@
     "linksEnd": true,
     "newPageEnd": false,
     "newPage": [
-      "tPA Eligibility Criteria"
+      "Hyperacute MRI Protocol"
     ],
     "newPageLinks": [
-      "Inclusion",
-      "Exclusion",
-      "Special Cases",
-      "BP Goal",
-      "Outcome Visual Aid"
-    ],
-    "newPageEnd2": false,
-    "newPage2": [
-      "Hyperacute Protocol"
-    ],
-    "newPageLinks2": [
       "Hyperacute MRI Protocol",
       "Special Situation",
       "WAKE-UP Stroke Protocol",
       "WAKE-UP Inclusion, Exclusion Crit.",
       "WAKE-UP Imaging Selection Crit.",
       "Neuroradiology contact for Emerg."
+    ],
+    "newPageEnd2": false,
+    "newPage2": [
+      "Thrombolytic Criteria"
+    ],
+    "newPageLinks2": [
+      "Inclusion",
+      "Exclusion",
+      "Special Cases",
+      "BP Goal",
+      "Outcome Visual Aid"
     ]
   },
   "PostThrombolytic_Monitoring_If_Applicable": {
@@ -102,7 +102,7 @@
     "linksEnd": true,
     "newPageEnd": false,
     "newPage": [
-      "post tPA Monitoring"
+      "Post-thrombolytic Monitoring"
     ],
     "newPageLinks": [
       "BP Goal and Mgmt",
@@ -307,7 +307,7 @@
     ],
     "linksEnd": false,
     "links": [
-      "Link to 1A",
+      "Thrombolytic Criteria",
       "Link to 3B",
       "Link to 4A",
       "Link to 4B",
@@ -334,7 +334,7 @@
     "end": true,
     "linksEnd": false,
     "links": [
-      "Link to 1A",
+      "Thrombolytic Criteria",
       "Link to 1B",
       "Link to 1C",
       "Link to 1D",
@@ -377,7 +377,7 @@
     "linksEnd": true,
     "newPageEnd": false,
     "newPage": [
-      "tPA Eligibility Criteria"
+      "Thrombolytic Criteria"
     ],
     "newPageLinks": [
       "Inclusion",
@@ -395,7 +395,7 @@
     "linksEnd": true,
     "newPageEnd": false,
     "newPage": [
-      "post tPA Monitoring"
+      "post Thrombolytic Monitoring"
     ],
     "newPageLinks": [
       "BP Goal and Mgmt",
@@ -429,7 +429,7 @@
   },
   "POTENTIAL_IV_TPA_CANDIDATE": {
     "title": "",
-    "content": "Potential IV tPA candidate per WAKE-UP protocol",
+    "content": "Potential IV thrombolytic candidate per WAKE-UP protocol",
     "end": false,
     "options": [
       "next"
@@ -451,7 +451,7 @@
   },
   "POTENTIAL_WAKEUP_MRI_CANDIDATE": {
     "title": "",
-    "content": "Potential Wake Up MRI candidate",
+    "content": "Potential WAKE-UP MRI candidate",
     "end": false,
     "options": [
       "next"
@@ -462,7 +462,7 @@
   },
   "POTENTIAL_WAKEUP_MRI_CANDIDATE_Cb_Db": {
     "title": "",
-    "content": "Potential Wake Up MRI candidate if symptom discovery < 4.5hr",
+    "content": "Potential WAKE-UP MRI candidate if symptom discovery < 4.5hr",
     "end": false,
     "options": [
       "next"
@@ -473,7 +473,7 @@
   },
   "POTENTIAL_WAKEUP_MRI_CANDIDATE_Ca_Da": {
     "title": "",
-    "content": "Potential IV tPA candidate per WAKE-UP protocol",
+    "content": "Potential IV thrombolytic candidate per WAKE-UP protocol",
     "end": false,
     "options": [
       "next"
@@ -484,7 +484,7 @@
   },
   "NIHSS_GREATER_THAN_6_INFO": {
     "title": "NIHSS ≥ 6",
-    "content": "Potential IV tPA candidate and thrombectomy candidate",
+    "content": "Potential IV thrombolytic candidate and thrombectomy candidate",
     "end": false,
     "options": [
       "next"
@@ -494,15 +494,23 @@
     "newPageEnd2": true
   },
   "POST_THROMBOLYTIC_MONITORING": {
-    "title": "Post-thrombolytic Monitoring if applicable",
+    "title": "Post-thrombolytic Monitoring ifss applicable",
     "content": "Triage per patient's diagnosis and necessary level of care",
     "end": true,
     "linksEnd": true,
-    "newPageEnd": true,
+    "newPageEnd": false,
+    "newPage": [
+      "Post-thrombolytic Monitoring"
+    ],
+    "newPageLinks": [
+      "BP Goal and Mgmt",
+      "Hemorrhagic Conversion",
+      "Angioedema"
+    ],
     "newPageEnd2": true
   },
   "PERFORM_RAPID_CTA": {
-    "title": "Perform Rapid / CTA",
+    "title": "Perform RAPID / CTA",
     "content": "Is LVO present?",
     "end": false,
     "options": [
@@ -533,13 +541,13 @@
     "newPageEnd2": true
   },
   "POST_THROMBOLYTIC_MONITORING_IF_APPLICABLE": {
-    "title": "Post-thrombolytic Monitoring if applicable",
+    "title": "Post-thrombolytic Monitoring if applicabless",
     "content": "Triage per patient's diagnosis and necessary level of care",
     "end": true,
     "linksEnd": true,
     "newPageEnd": false,
     "newPage": [
-      "post tPA Monitoring"
+      "Post-thrombolytic Monitoring"
     ],
     "newPageLinks": [
       "BP Goal and Mgmt",
@@ -566,6 +574,7 @@
       "Exclusion Criteria",
       "Imaging Selection",
       "CTP/CTA Protocol",
+      "Thrombectomy Visual Aid",
       "mRS"
     ],
     "newPageEnd2": true
@@ -628,8 +637,8 @@
     "newPageEnd2": true
   },
   "GO_TO_ENDOVASCULAR_PROTOCOL_2": {
-    "title": "Go to Endovascular Protocol",
-    "content": "Is patient eligible for thrombectomy?$newLine$ - Functional status of patient (mRS<3)?$newLine$ - No large,evolving infarct on CT and ASPECTS ≥ 6?$newLine$Rapid criteria: $newLine$$newList$ Core infarct volumes ≤ 70mL$newLine$$newList$ Core/Perfusion mismatch volume ≥ 15mL$newLine$$newList$Core/Perfusion mismatch ratio ≥ 1.8",
+    "title": "Is patient eligible for thrombectomy?",
+    "content": "- Functional status of patient (mRS<3)?$newLine$ - No large,evolving infarct on CT and ASPECTS ≥ 6?$newLine$RAPID criteria: $newLine$$newList$ Core infarct volumes ≤ 70mL$newLine$$newList$ Core/Perfusion mismatch volume ≥ 15mL$newLine$$newList$Core/Perfusion mismatch ratio ≥ 1.8",
     "end": false,
     "options": [
       "Yes",
@@ -651,8 +660,8 @@
     "title": "Cheif to alert stroke felow/attending for all LVOs and call NeuroIR. Take patient up to INR Suite. Admite to NeuroICU as appropriate."
   },
   "GO_TO_ENDOVASCULAR_PROTOCOL_3": {
-    "title": "Go to Endovascular Protocol",
-    "content": "Is patient eligible for thrombectomy?$newLine$ - Functional status of patient (mRS<3)?$newLine$ - No large, evolving infarct on CT and ASPECTS ≥ 6?$newLine$Rapid criteria: $newLine$$newList$ Age < 80: core infarct volumes ≤ 30 mL$newLine$$newList$ Age  ≥ 80: core infarct volumes ≤ 20 mL",
+    "title": "Is patient eligible for thrombectomy?",
+    "content": "- Functional status of patient (mRS<3)?$newLine$ - No large, evolving infarct on CT and ASPECTS ≥ 6?$newLine$RAPID criteria: $newLine$$newList$ Age < 80: core infarct volumes ≤ 30 mL$newLine$$newList$ Age  ≥ 80: core infarct volumes ≤ 20 mL",
     "end": false,
     "options": [
       "Yes",
@@ -686,10 +695,8 @@
     "newPageLinks": [
       "Inclusion for Wake-up",
       "Exclusion for Wake-up",
-      "Imaging Selection",
-      "Inclusion",
-      "Exclusion",
-      "Special Cases",
+      "Imaging Selection or Wake-up",
+      "Thrombolytic Criteria",
       "BP Goal",
       "Outcome Visual Aid"
     ],
@@ -702,7 +709,7 @@
     "linksEnd": true,
     "newPageEnd": false,
     "newPage": [
-      "post tPA Monitoring"
+      "Post-thrombolytic Monitoring"
     ],
     "newPageLinks": [
       "BP Goal and Mgmt",

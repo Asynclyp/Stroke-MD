@@ -56,7 +56,7 @@ export default class LotsOfStyles extends Component {
           <Text style={styles.subTextBold}>NEI fellow</Text> calls the ED Comm
           Center <PhoneNumber number={"3143629104"} /> and requests immediate
           activation of “Thrombectomy Pager”; the junior neurology resident is
-          responsible for taking the patient up to NEI suite with the patient’s
+          responsible for taking the patient up to NEI suite <Text style={styles.SubTextItalic}>with</Text> the patient’s
           RN.
         </Text>
         <Text style={styles.subText}>
@@ -77,7 +77,7 @@ export default class LotsOfStyles extends Component {
           <Text style={styles.subTextBold}>potential thrombectomy </Text>on a{" "}
           <Text style={styles.subTextBold}> [#]</Text>-year old{" "}
           <Text style={styles.subTextBold}> [man/woman]</Text>. Imaging is
-          available on <Text style={styles.ubTextBold}>[PICOM/ClinDesk] </Text>
+          available on <Text style={styles.subTextBold}>[PICOM/ClinDesk] </Text>
           under<Text style={styles.subTextBold}> [patient name/DOB]</Text>.
         </Text>
         <Text></Text>

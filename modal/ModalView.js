@@ -50,6 +50,7 @@ import A2ImagingSelection from "../sectionData/2aImagingSelection"
 import A4Inclusion from "../sectionData/4aInclusion"
 import A4Exclusion from "../sectionData/4aExclusion"
 import Section5 from "../sectionData/Section5.js"
+import G2Image from "../sectionData/2gImage.js"
 
 
 
@@ -78,7 +79,7 @@ export default class ModalView extends Component {
           <View style={styles.textView}>
             <Text style={[styles.text, { fontSize: 18 }]}> {this.props.title.replace("Link to", "Section")}</Text>
             {
-              this.props.title === "Link to 1A" ? <Section1a></Section1a>
+              this.props.title === "Thrombolytic Criteria" ? <Section1a></Section1a>
                 : this.props.title === "Inclusion" ? <Inclusion></Inclusion>
                   : this.props.title === "Special Cases" ? <SpecialCases></SpecialCases>
                     : this.props.title === "BP Goal" ? <BloodPressureGoal></BloodPressureGoal>
@@ -128,7 +129,7 @@ export default class ModalView extends Component {
                                                                                                             : this.props.title === "WAKE-UP Inclusion, Exclusion Crit." ? <Section3d></Section3d>
                                                                                                               : this.props.title === "WAKE-UP Imaging Selection Crit." ? <Section3e></Section3e>
                                                                                                                 : this.props.title === "Neuroradiology contact for Emerg." ? <Section3f></Section3f>
-
+                                                                                                                  :this.props.title === "Thrombectomy Visual Aid" ? <G2Image></G2Image>
                                                                                                                   : <Text></Text>}
           </View>
         </ScrollView>

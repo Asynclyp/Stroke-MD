@@ -35,7 +35,7 @@ export default class LotsOfStyles extends Component {
                 <Text><Text style={styles.boldText}>NeuroRad Fellow (24/7): </Text><Text style={styles.subText}> 508-3767 </Text></Text> */}
         <Text style={styles.header}>Special situations for hMRI:</Text>
         <Text style={styles.subText}>
-          1) If Hyperacute MRI process occurs at night and another acute page
+          1) If Hyperacute MRI process occurs at night <Text style={styles.SubTextItalic}>and</Text> another acute page
           occurs, the On-Call Chief Resident will call the On-Call Stroke
           Resident to cover the Hyperacute MRI patient so the Night Float
           Resident can respond to the other Stroke Page. The On-Call Stroke

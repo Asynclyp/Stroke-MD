@@ -13,7 +13,7 @@ export default class LotsOfStyles extends Component {
         <Text></Text>
         <Text style={styles.subTextBold}>
           Note: thrombolytic supply for patients is located in
-          <Text style={{ textDecorationLine: "underline" }}> NNICU 9400</Text>
+          <Text style={[styles.subTextUnderline, styles.SubTextItalic]}> NNICU 9400</Text>
         </Text>
         <Text style={styles.subText}>
           1. The Stroke Team is activated by hospital personnel upon recognition 
@@ -75,7 +75,7 @@ export default class LotsOfStyles extends Component {
           7. If decision to give thrombolytic is made with Stroke Chief, who confirms it 
           with the Stroke attending,{" "}
           <Text style={{ fontWeight: "bold" }}>
-            The Neurology resident must confirm the head CT read with a 
+            the Neurology resident must confirm the head CT read with a 
             credentialed radiologist (fellow or attending) prior to administering thrombolytic. 
           </Text>{" "}
           Last known normal time, patient weight, and thrombolytic dose are determined. 
@@ -93,7 +93,7 @@ export default class LotsOfStyles extends Component {
           9. The thrombolytic drug and post thrombolytic monitoring needs to be ordered in EPIC using the appropriate
            order set. See specific notes below.**
         </Text>
-        <Text style={styles.subTextBold}>
+        <Text style={[styles.subTextBold, styles.SubTextItalic]}>
           * To document an acute stroke assessment:{" "}
         </Text>
         <Text style={styles.subTextList}>
@@ -117,7 +117,7 @@ export default class LotsOfStyles extends Component {
           reasons for not giving thrombolytic any reasons for delay in thrombolytic administration 
           for treatment times longer than 30 minutes after thrombolytic pager activation. 
         </Text>
-        <Text style={styles.subTextBold}>** To order thrombolytic for inpatients (the ER will order in the ER as always):</Text>
+        <Text style={[styles.subTextBold, styles.SubTextItalic]}>** To order thrombolytic for inpatients (the ER will order in the ER as always):</Text>
         <Text style={styles.subTextList}>
           1. Select appropriate order set (ED Stroke TIA and Thrombolytic, NEU Thrombolytic for Stroke and Post Thrombolytic Care
           Admission, or NEU Inpatient Code Stroke)

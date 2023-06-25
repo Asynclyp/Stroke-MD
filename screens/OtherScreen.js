@@ -420,7 +420,7 @@ export default class OtherScreen extends Component {
                                 { this.state.Section1gThrombolyticDosingCalc == true ? this.setState({ Section1gThrombolyticDosingCalc: false }) : this.setState({ Section1gThrombolyticDosingCalc: true }) }
                             }
                         }>
-                        {this.state.Thrombolytic == true ? <Text style={styles.infoHeader}>Thrombolytic Dosing Calculator</Text> : null}
+                        {this.state.Thrombolytic == true ? <Text style={styles.infoHeader}>Thrombolytic DOSING Calculator</Text> : null}
                     </TouchableOpacity>
                     {this.state.Thrombolytic == true && this.state.Section1gThrombolyticDosingCalc == true ?
                         <View>

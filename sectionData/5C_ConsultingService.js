@@ -73,7 +73,7 @@ export default class LotsOfStyles extends Component {
           maintains responsibility for the initial care of the patient.
         </Text>
         <Text style={styles.subTextList}>
-          10. <Text style={styles.subTextUnderline}>Overflow patients: </Text>
+          10. <Text>Overflow patients: </Text>
            Stroke patients (ischemic or hemorrhagic) who are admitted to the
           stroke service but ‘overflow’ to other units solely due to lack of bed
           availability (including cerebral hemorrhage or post thrombectomy

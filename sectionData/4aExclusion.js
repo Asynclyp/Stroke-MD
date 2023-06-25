@@ -13,7 +13,7 @@ export default class LotsOfStyles extends Component {
                 <Text style={styles.subText}>Early CT signs of ischemia > 1/3 of the MCA territory</Text>
                 <Text style={styles.subText}>Large vessel occlusion and planned thrombectomy</Text>
                 <Text style={styles.subText}>NIHSS > 25 </Text>
-                <Text style={styles.subText}>Contraindication  to IV thrombolytic according to thrombolytic stroke protocol for less than 4.5 hour window</Text>
+                <Text style={styles.subText}>Contraindication to IV thrombolytic according to thrombolytic stroke protocol for less than 4.5 hour window</Text>
             </View>
         );
     }

@@ -14,7 +14,7 @@ export default class LotsOfStyles extends Component {
   render() {
     return (
       <View style={styles.contentContainer}>
-        <Text style={styles.boldText}>
+        <Text style={styles.boldText, styles.header}>
           Hyperacute MRI Protocol for Stroke Mimics: to rule-out acute stroke in
           4.5 hr window{" "}
         </Text>
@@ -83,7 +83,7 @@ export default class LotsOfStyles extends Component {
         </Text> */}
         <Text style={[styles.subTextBold,styles.subTextBoldUnderline]}>MRI, South</Text>
         <Text style={styles.subText}>
-          <Text style={styles.subTextBold}>Day shift </Text>(M-F 7AM-10PM,
+          <Text style={[styles.subTextBold, styles.SubTextItalic]}>Day shift </Text>(M-F 7AM-10PM,
           Sat/Sun 6AM-6PM){" "}
         </Text>
         <Text style={styles.subTextList2}>
@@ -94,7 +94,7 @@ export default class LotsOfStyles extends Component {
           </Text>
         </Text>
         <Text style={styles.subText}>
-          <Text style={styles.subTextBold}>Night shift </Text>(M-F 10PM-7AM,
+          <Text style={[styles.subTextBold, styles.SubTextItalic]}>Night shift </Text>(M-F 10PM-7AM,
           Sat/Sun 6PM-6AM){" "}
         </Text>
         <Text style={styles.subTextList2}>

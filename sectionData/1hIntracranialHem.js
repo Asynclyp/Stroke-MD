@@ -6,13 +6,12 @@ export default class LotsOfStyles extends Component {
     render() {
         return (
             <View style={styles.contentContainer}>
-                <Text style={styles.header}>Management of Intracranial Hemorrhage Post-tPA</Text>
+                <Text style={styles.header}>Management of Intracranial Hemorrhage Post-thrombolytic</Text>
                 <Text style={[styles.centered, { fontWeight: "bold", textDecorationLine: "underline" }]}>Adapted from AHA Guidelines for Stroke. 2018;49(3) and from Stroke. 2017; 48:e343-e361.</Text>
                 <Text></Text>
-                <Text style={styles.subText}>One should suspect the occurrence of intracranial hemorrhage following the start of thrombolytic infusion if there is any acute neurological deterioration, new headache, acute hypertension, or nausea and vomiting. </Text>
+                <Text style={styles.subText}>One should suspect the occurrence of intracranial hemorrhage following the administration of thrombolytic if there is any acute neurological deterioration, new headache, acute hypertension, or nausea and vomiting. </Text>
                 <Text></Text>
                 <Text style={styles.boldText}>If hemorrhage is suspected do the following: </Text>
-                <Text style={styles.subTextList}>- Discontinue thrombolytic infusion unless other causes of neurological deterioration are apparent. </Text>
                 <Text style={styles.subTextList}>- Obtain immediate CT scan. </Text>
                 <Text style={styles.subTextList}>- Draw blood for CBC, PT(INR), aPTT, fibrinogen, and type and cross.</Text>
                 <Text style={styles.boldText}>If intracranial hemorrhage present: </Text>

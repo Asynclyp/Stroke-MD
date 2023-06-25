@@ -14,10 +14,9 @@ export default class LotsOfStyles extends Component {
           attending
         </Text>
         <Text></Text>
-        <Text style={styles.subTextBoldUnderline}>
-          Selection criteria for endovascular intervention
+        <Text style={[styles.subTextBoldUnderline, styles.subHeader]}>
+          Endovascular internention eligiblity criteria
         </Text>
-        <Text style={styles.header}>Endovascular eligibility criteria</Text>
         <Text></Text>
         <Text style={styles.subTextList}>A. Inclusion criteria</Text>
         <Text style={styles.subTextList2}>1. Age ≥ 18 years </Text>
@@ -93,12 +92,7 @@ export default class LotsOfStyles extends Component {
           or andexanet alfa for apixaban, rivaroxaban, and edoxaban – See “Acute
           ICH Protocol – 4. Management of Coagulopathy”
         </Text>
-        <Text style={styles.subText}>
-          *** Exceptions may be made for other vessel occlusions (i.e. M2) at
-          the discretion of the treating physician if there is compelling
-          clinical and radiological evidence suggesting benefit or in the
-          presence of an approved research protocol
-        </Text>
+        
       </View>
     );
   }

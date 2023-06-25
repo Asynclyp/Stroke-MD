@@ -15,7 +15,7 @@ export default class LotsOfStyles extends Component {
                 <Text style={styles.subTextList}>• Awake fiberoptic intubation is optimal. Nasal-tracheal intubation may be required but poses risk of epistaxis post-IV thrombolytic. </Text>
                 <Text style={styles.subTextList}>• Cricothyroidotomy is rarely needed and also problematic after IV thrombolytic.</Text>
                 <Text></Text>
-                <Text style={styles.subText}>Discontinue IV thrombolytic infusion and hold ACEIs</Text>
+                <Text style={styles.subText}>Hold ACEIs</Text>
                 <Text style={styles.subText}>Administer IV methylprednisolone 125 mg</Text>
                 <Text style={styles.subText}>Administer IV diphenhydramine 50 mg</Text>
                 <Text style={styles.subText}>Administer ranitidine 50 mg IV or famotidine 20 mg IV</Text>

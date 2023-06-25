@@ -107,7 +107,7 @@
                                   }
                                 },
                                 "No": {
-                                  "question": "Triage_per_patient_diagnosis_and_level_of_care_needed"
+                                  "question": "POST_THROMBOLYTIC_MONITORING"
                                 }
                               }
                             }

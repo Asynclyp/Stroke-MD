@@ -17,7 +17,7 @@ export default class LotsOfStyles extends Component {
             styles.header
           ]}
         >
-          Blood Pressure Management during and after thrombolytic administration
+          Blood Pressure Management <Text style={[styles.SubTextItalic, styles.boldText, styles.header]}>during</Text> and <Text style={[styles.SubTextItalic, styles.boldText, styles.header]}>after</Text> thrombolytic administration
         </Text>
         <Text style={styles.centered}>
           Adapted AHA Guidelines for Stroke. 2018;49(3).{" "}
@@ -86,7 +86,7 @@ export default class LotsOfStyles extends Component {
         <Text style={styles.boldText}>
           If intracranial hemorrhage present:{" "}
         </Text>
-        <Text style={styles.subTextList}>
+        <Text style={styles.subTextList, styles.subTextBold}>
           - Discuss management with stroke fellow/attending.
         </Text>
         <Text style={styles.subTextList}>
@@ -138,16 +138,13 @@ export default class LotsOfStyles extends Component {
           patient)
         </Text>
         <Text></Text>
-        <Text style={styles.header}>
+        <Text style={[styles.header,
+            {textDecorationLine: "underline"}]}>
           Additional Management of Orolingual Angioedema Associated With IV
-          thrombolytic Administration forAIS
+          thrombolytic Administration for AIS
         </Text>
         <Text
-          style={[
-            styles.centered,
-            { fontWeight: "bold", textDecorationLine: "underline" },
-          ]}
-        >
+          style={[styles.centered]}>
           Adapted from Stroke. 2018; January 24, 2018.
         </Text>
         <Text></Text>

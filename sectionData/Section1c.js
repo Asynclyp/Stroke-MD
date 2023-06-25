@@ -100,7 +100,7 @@ export default class LotsOfStyles extends Component {
                 <Text></Text>
                 <Text></Text>
                 <Text style={{ textDecorationLine: "underline", fontWeight: "bold" }}>ED Acute Ischemic Stroke Protocol</Text>
-                <Text style={styles.subText}>Pt arrives via ambulance/EMS or walks-in via ED triage. EMS takes patient directly to Head CT first unless patient is medically unstable then pt goes to TCC first.</Text>
+                <Text style={styles.subText}>PT arrives via ambulance/EMS or walks-in via ED triage. EMS takes patient directly to Head CT first unless patient is medically unstable then pt goes to TCC first.</Text>
                 <Text></Text>
                 <Text style={{ textDecorationLine: "underline", fontWeight: "500" }}>Phase 1: Pre-CT</Text>
                 <Text style={styles.subTextList}> - "call for silence"</Text>
@@ -110,11 +110,10 @@ export default class LotsOfStyles extends Component {
                 <Text style={styles.subTextList}>- Neurology resident introduces him/herself reminds team to stay in CT for evaluation and thrombolytic treatment if patient is a suspected ischemic stroke. Ex. “Hi (insert ED RN’s or ED MD’s name).  I’m Dr. X, the Neurology Resident, and will be running this stroke code with you.  I want to remind everyone that we are going to <Text style={styles.subTextUnderline}>stay in CT</Text> to evaluate the possible stroke patient and make a quick decision on thrombolytic treatment before breaking up or moving back to TCC.”  </Text>
                 <Text style={styles.subTextList}>- RN registers pt and orders stroke protocol orderset, places BP monitor on 5 min cycle; </Text>
                 <Text style={styles.subTextList}>- EM/Neuro MD: Hx/NIHSS until CT Start</Text>
-                <Text style={styles.subTextList}>- During head CT, EM/Neuro MD: Decide if  pt is 1 of 3 categories: </Text>
+                <Text style={styles.subTextList}>- During head CT, EM/Neuro MD: Decide if pt is 1 of 3 categories: </Text>
                 <Text style={styles.subTextList2}>a) “hemorrhagic”</Text>
                 <Text style={styles.subTextList2}>b) “likely mimic / non-neurologic”</Text>
-                <Text style={styles.subTextList2}>c) “possibly ischemic”</Text>
-                <Text style={styles.subTextList2}>If “possibly ischemic”, inform RN to bring thrombolytic to bedside</Text>
+                <Text style={styles.subTextList2}>c) “possibly ischemic”; if “possibly ischemic”, inform RN to bring thrombolytic to bedside</Text>
                 <Text style={styles.subTextList}>- RN: If "possibly ischemic", obtains thrombolytic kit from TCC pyxis; if "likely mimic/non-neurologic", calls comm center RN to inform pt will not need a TCC room</Text>
                 <Text></Text><Text></Text>
                 <Text style={{ textDecorationLine: "underline", fontWeight: "500" }}>Phase 3: Post-CT</Text>

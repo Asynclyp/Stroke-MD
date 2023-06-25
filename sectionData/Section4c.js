@@ -20,7 +20,7 @@ export default class LotsOfStyles extends Component {
                 <Text style={styles.subText}> - Accompany RN to MRI </Text>
                 <Text style={styles.subText}> - Remove any badges/metal from yourself and patient prior to arrival in MRI. Remove phones and keep in control room.  Help RN and MRI tech to remove vital signs monitor and help move patient into MRI scanner.   </Text>
                 <Text style={styles.subText}> - Do not need MRI-compatible monitor on patient unless concern for abnormal vital signs (MRI protocol is ~6 min so can check vitals before and after scan) </Text>
-                <Text><Text style={styles.subText}> - Remind MRI tech to perform the Hyperacute stroke MRI protocol and <Text style={styles.boldText}>MR tech will contact neuroradiology to read scan with you in person or remotely.</Text></Text></Text>
+                <Text><Text style={styles.subText}> - Remind MRI tech to perform the Hyperacute stroke MRI protocol and <Text style={[styles.boldText, styles.SubTextItalic]}>MR tech will contact neuroradiology to read scan with you in person or remotely.</Text></Text></Text>
                 <Text style={styles.subText}> - DWI or FLAIR should be repeated if there is significant motion artifact </Text>
                 <Text style={styles.subText}> - If DWI lesion present and consistent with patient’s presenting stroke symptoms, then: </Text>
                 <Text style={styles.subTextList}> • e svaluate FLAIR hyperintensity in same region as DWI lesion </Text>

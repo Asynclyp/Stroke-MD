@@ -130,7 +130,7 @@ export default class Table extends Component {
 
             <View style={styles.borderEven}>
               <View style={styles.rowView}>
-                <Text style={{ fontWeight: "bold" }}>
+                <Text style={{ fontWeight: "bold", fontStyle: "italic"}}>
                   * These will be completed by nurses for neuro floors
                   (113/114/115/105/10400) and Shukar. The resident will be
                   expected to perform these on patients assigned to non-neuro

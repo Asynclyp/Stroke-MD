@@ -13,7 +13,7 @@ export default class LotsOfStyles extends Component {
                 </View>
                 {/* <Image source={require('../Images/Section0image1.png')} style={{ height: Dimensions.get("window").height * .3, width: Dimensions.get("window").width * .95, resizeMode: 'contain' }} /> */}
                 {/* <Image source={require('../Images/Section0image2.png')} style={{ height: Dimensions.get("window").height * .3, width: Dimensions.get("window").width * .95, resizeMode: 'contain' }} /> */}
-                <Image source={require('../Images/section0image1.png')} style={{ height: Dimensions.get("window").height * .3, width: Dimensions.get("window").width * .95, resizeMode: 'contain' }} />
+                <Image source={require('../Images/section0image.png')} style={{ height: Dimensions.get("window").height * .3, width: Dimensions.get("window").width * .95, resizeMode: 'contain' }} />
                 <Image source={require('../Images/section0image2(new).png')} style={{ height: Dimensions.get("window").height * .3, width: Dimensions.get("window").width * .95, resizeMode: 'contain' }} />
             </View >
         );
